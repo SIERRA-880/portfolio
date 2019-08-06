@@ -1,0 +1,31 @@
+html{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+#head{
+    background-color: #eee;
+    width: 100%;
+    padding: 25px;
+}
+#title{
+    width: 50vw;
+    margin: auto;
+}
+#image, #img-caption{
+    display: block;
+    width: 40vw;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 10px;
+}
+.center{
+    padding-top: 10px;
+    display: block;
+    width: 10vw;
+    margin: auto;
+    width: 1000px;
+    color: black;
+}
+#background{
+    background-color: #eee;
+}

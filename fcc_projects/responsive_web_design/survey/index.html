@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <link href="main.css" rel="stylesheet">
+    <head>
+        <title>Survey</title>
+    </head>
+    <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <div>
+        <h1 id="title">Survey form</h1>
+    </div>
+
+    <div class="center">
+        <p id="description" style="text-align: center; padding: 10px;">Give us your feedback</p>
+        <form id="survey-form" action="mailto:ugo.pr@protonmail.com">
+            <label class="q" id="name-label">Name</label><input autofocus type="text" name="name" id="name" placeholder="Enter your name" required>
+            <label class="q" id="email-label">Email</label><input autofocus type="email" name="email" id="email"  placeholder="Enter your email" required>
+            <label class="q" id="number-label">Age</label><input autofocus type="number" min="18" max="125" name="age" id="number"  placeholder="Enter your age" required>
+            <label class="q">Favourite pet</label>
+            <select id="dropdown">
+                <option disabled value>Select an option</option>
+                <option  value="student">Dog</option>
+                <option  value="student">Cat</option>
+                <option  value="student">Turtle</option>
+            </select>
+            <label class="q">Favourite fruit</label>
+                <ul class="a" style="list-style: none; padding: 0px; margin: 0px;">
+                    <li class="radio"><label><input name="radio-buttons" value="1"  type="radio" class="userRatings" >Apple</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="2"  type="radio" class="userRatings" >Peer</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="3"  type="radio" class="userRatings" >Banana</label></li>
+                </ul>
+            <label class="q">Why do you want to join us ?</label><textarea class="a" name="textarea" id="textarea" cols="10 " rows="10" style="width: 20vw;"></textarea>
+            <label class="q">What can I improve ?</label>
+            <ul class="a" style="list-style: none; padding: 0px; margin: 0px;">
+                <li><label><input type="checkbox" value="1">Visibility</label></li>
+                <li><label><input type="checkbox" value="2">Accesibility</label></li>
+            </ul>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+    </body>
+</html>

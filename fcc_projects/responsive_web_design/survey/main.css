@@ -1,0 +1,43 @@
+html{
+    background: lightblue;
+    font-family: 'Roboto Slab', serif;
+}
+#title{
+    font-family: 'Roboto Slab', serif;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.q{
+    display: inline-block;
+    width: 47%;
+    text-align: right;
+    margin-right: 10px;
+    vertical-align: middle;
+    padding: 10px;
+}
+.a{
+    display: inline-block;
+    width: 47%;
+    margin-left: 10px;
+    vertical-align: middle;
+    padding: 10px;
+}
+.center{
+    width: 50vw;
+    margin: auto;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+#submit {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 40%;
+    margin: 10px;
+    border: 0px solid;
+    margin-left: 30%;
+    margin-right: 30%;
+}
