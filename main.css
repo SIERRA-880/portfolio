@@ -1,113 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 * {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    margin: 0;
-    padding: 0;
-    max-width:100%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 .top-left {
-    z-index: 2;
-    position: fixed;
-    width: 15vw;
-    top: 5vh;
-    left: 0;
-    text-align: center;
+  z-index: 2;
+  position: fixed;
+  width: 15vw;
+  top: 5vh;
+  left: 0;
+  text-align: center;
 }
 
 .middle-left {
-    z-index: 2; 
-    position: fixed;
-    width: 15vw;
-    top: 45vh;
-    left: 0;
-    text-align: center;
+  z-index: 2;
+  position: fixed;
+  width: 15vw;
+  top: 45vh;
+  left: 0;
+  text-align: center;
 }
 
 .bottom-left {
-    z-index: 2;
-    position: fixed;
-    width: 15vw;
-    top: 90vh;
-    left: 0;
-    text-align: center;
+  z-index: 2;
+  position: fixed;
+  width: 15vw;
+  top: 90vh;
+  left: 0;
+  text-align: center;
 }
 
 #left-column {
-    z-index: 1;
-    height: 100vh;
-    width: 15vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #212121;
+  z-index: 1;
+  height: 100vh;
+  width: 15vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #212121;
 }
 
 .tile-container {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-gap: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+  grid-gap: 0;
 }
 
 .tile, .tile-img {
-    width: 100vw;
-    height: 25vh;
+  width: 100vw;
+  height: 25vh;
 }
 
 #tile0 {
-    background-image: url(portfolio_img/documentation.png);
+  background-image: url("portfolio_img/documentation.png");
 }
+
 #tile1 {
-    background-image: url(portfolio_img/survey.png)
+  background-image: url("portfolio_img/survey.png");
 }
+
 #tile2 {
-    background-image: url(portfolio_img/tribute.png)
+  background-image: url("portfolio_img/tribute.png");
 }
+
 #tile3 {
-    background-image: url(portfolio_img/landing.jpg)
+  background-image: url("portfolio_img/landing.jpg");
 }
+
 #tile4 {
-    background-image: url(portfolio_img/calculator.png)
+  background-image: url("portfolio_img/calculator.png");
 }
+
 .tile-text {
-    width: 100vw;
-    height: 15vh;
-    padding-top: 10vh;
-    font-size: 25px;
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    transition: 0.5s;
+  width: 100vw;
+  height: 15vh;
+  padding-top: 10vh;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
+
 .tile-text:hover {
-    font-size: 40px;
-    transition: 0.5s;
+  font-size: 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 1400px) {
-    #left-column {
-        position: relative;
-        height: 60vw;
-        width: 100vw;
-    }
-    .top-left {
-        position: absolute;
-        top: 2vh;
-        width: 100vw;
-    }
-    .top-left::after {
-        position: absolute;
-        top: 45vw;
-        left: 0;
-        width: 100vw;
-        content: "Email: ugo.pr@protonmail.com"
-    }
-    .middle-left {
-        position: absolute;
-        top: 13vh;
-        width: 100vw;
-    }
-    .bottom-left {
-        display: none;
-    }
+  #left-column {
+    position: relative;
+    height: 60vw;
+    width: 100vw;
+  }
+  .top-left {
+    position: absolute;
+    top: 2vh;
+    width: 100vw;
+  }
+  .top-left::after {
+    position: absolute;
+    top: 45vw;
+    left: 0;
+    width: 100vw;
+    content: "Email: ugo.pr@protonmail.com";
+  }
+  .middle-left {
+    position: absolute;
+    top: 13vh;
+    width: 100vw;
+  }
+  .bottom-left {
+    display: none;
+  }
 }
+/*# sourceMappingURL=main.css.map */

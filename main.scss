@@ -1,0 +1,120 @@
+@import "_reset";
+
+$font: 'Montserrat', sans-serif;
+
+* {
+    font-family: $font;
+    color: white;
+    margin: 0;
+    padding: 0;
+    max-width:100%;
+}
+
+.top-left {
+    z-index: 2;
+    position: fixed;
+    width: 15vw;
+    top: 5vh;
+    left: 0;
+    text-align: center;
+}
+
+.middle-left {
+    z-index: 2; 
+    position: fixed;
+    width: 15vw;
+    top: 45vh;
+    left: 0;
+    text-align: center;
+}
+
+.bottom-left {
+    z-index: 2;
+    position: fixed;
+    width: 15vw;
+    top: 90vh;
+    left: 0;
+    text-align: center;
+}
+
+#left-column {
+    z-index: 1;
+    height: 100vh;
+    width: 15vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #212121;
+}
+
+.tile-container {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 0;
+}
+
+.tile, .tile-img {
+    width: 100vw;
+    height: 25vh;
+}
+
+@mixin background($bg_url) {
+    background-image: url($bg_url);
+}
+#tile0 {
+    @include background("portfolio_img/documentation.png");
+}
+#tile1 {
+    @include background("portfolio_img/survey.png");
+}
+#tile2 {
+    @include background("portfolio_img/tribute.png");
+}
+#tile3 {
+    @include background("portfolio_img/landing.jpg");
+}
+#tile4 {
+    @include background("portfolio_img/calculator.png");
+}
+.tile-text {
+    width: 100vw;
+    height: 15vh;
+    padding-top: 10vh;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+}
+.tile-text:hover {
+    font-size: 40px;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 1400px) {
+    #left-column {
+        position: relative;
+        height: 60vw;
+        width: 100vw;
+    }
+    .top-left {
+        position: absolute;
+        top: 2vh;
+        width: 100vw;
+    }
+    .top-left::after {
+        position: absolute;
+        top: 45vw;
+        left: 0;
+        width: 100vw;
+        content: "Email: ugo.pr@protonmail.com"
+    }
+    .middle-left {
+        position: absolute;
+        top: 13vh;
+        width: 100vw;
+    }
+    .bottom-left {
+        display: none;
+    }
+}
